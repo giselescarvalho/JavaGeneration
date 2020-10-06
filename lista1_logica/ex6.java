@@ -20,9 +20,9 @@ public class ex6 {
 		System.out.println("Entre com o valor de y1: ");
 		y1 = ler.nextInt();
 		System.out.println("Entre com o valor de y2: ");
-		y1 = ler.nextInt();
+		y2 = ler.nextInt();
 	
-		d = (int)(Math.sqrt((Math.pow(x2-x1,2.0))+(Math.pow(y2-y1,2.0)));
+		d = (int) (Math.sqrt((Math.pow(x2-x1,2.0))+(Math.pow(y2-y1,2.0))));
 		
 		System.out.printf("O valor do cáculo da raiz quadrada de (x2-x1)^2 + (y2-y1)^2 é: " + d);
 	
