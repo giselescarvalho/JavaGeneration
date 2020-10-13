@@ -13,7 +13,7 @@ public class ex2 {
 		Scanner ler = new Scanner(System.in);
 		
 		int[] num = new int[6];
-		int i, contpar=0, contimpar=0;
+		int i, contpar=0, contimpar=0, somapar=0, somaimpar=0;
 		
 		for (i=0; i<6;i++)
 		{	System.out.println("Digite um valor que será armazenado: ");
@@ -22,17 +22,21 @@ public class ex2 {
 			if(num[i]%2 == 0)
 			{
 				contpar++;
+				somapar = somapar + num[i];
+				System.out.println("Número par: " + num[i]);
 			}
 			
 			else
 			{
 				contimpar++;
+				somaimpar = somaimpar + num[i] ;
+				System.out.println("Número ímpar: " + num[i]);
 			}
 			
 		}
 		
-		System.out.println("A quantidade de números par foi: " + contpar);
-		System.out.println("A quantidade de números ímpares foi: " + contimpar);
+		System.out.println("A quantidade de números pares digitados foi: " + contpar + ". E a soma dos números foi: " + somapar);
+		System.out.println("A quantidade de números ímpares digitados foi: " + contimpar + ". E a soma dos números ímpares foi: " + somaimpar);
 	
 	}
 
